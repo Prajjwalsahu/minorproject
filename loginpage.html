@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Login page</title>
+<style>
+body,html{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+ 
+}
+
+div.bg-image{
+  background-image: url("image5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 1500px;
+  height: 710px;
+  filter: blur(2px);
+
+}
+
+
+
+
+
+ div.loginbox{
+  width: 400px;
+  height: 530px;
+  background: #ffffff;
+  color: #000000;
+  top: 30%;
+  left: 80%;
+  position: absolute;
+  transform: translate(-100%,-50%);
+  box-sizing: border-box;
+ }
+
+  h1{
+  margin: 40;
+  padding: 20px;
+  font-size: 50px;
+  font-weight: 50;
+  }
+  div.loginbox{
+  margin: 100;
+  padding: 0;
+  font-weight: bold;
+  }
+  
+div.loginbox input[type="submit"]
+{
+border: none;
+outline: none;
+height: 50px;
+width: 400px;
+background: #0099ff;
+color: #fff;
+font-size: 20px;
+border-radius: 100px;
+transform: translate(0%,100%);
+}
+div.loginbox input[type="submit"]:hover
+{
+background: #ffc107;
+color: 000;
+}
+div.loginbox input[type="text"]
+{
+height: 30px;
+width: 400px;
+}
+div.loginbox input[type="password"]
+{
+height: 30px;
+width: 400px;
+}
+div.relative{
+position: relative;
+left: 10px;
+bottom: -80px;
+width: 200px;
+font-size: 20px;
+line-height: 10px;
+color: #000000;
+}
+relative:hover{
+color: #0000A0;
+}
+div.relative1{
+position: relative;
+left: 200px;
+bottom: -70px;
+width: 200px;
+font-size: 20px;
+line-height: 10px;
+color: #000000;
+}
+
+</style>
+</head>
+<body>
+   <div class="bg-image"></div> 
+   <div class="loginbox">
+        <h1 style="text-align: center">	Login </h1>
+		<form>
+		   <p>Username or Email </p>
+		   <input type="text" name=""  placeholder="Enter username">
+		   <p>Password</p>
+		   <input type="password" name="" placeholder="Enter password">
+		   <label>
+		   <input type="checkbox" checked="unchecked" name="stay signed in" >stay signed in
+		   </label>
+		   <input type="submit" name="" value="Login">
+		   <div class="relative">
+		    <a href="#" >Forgot password </a>
+       </div>
+			<div class="relative1">
+		       <a href="#" >Don't have account</a>
+      </div>
+		</form>
+   </div>
+</body>
+</html>
